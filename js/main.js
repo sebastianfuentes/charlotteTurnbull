@@ -1,10 +1,9 @@
 $(document).ready(function(){
-	$(".container").click(function() {
-		$(this).removeClass('unactive');
-		$(".container").not(this).addClass('active');
-	});
-});
-$(document).ready(function(){
+	// toggle all containers but this one
+	// $(".container").click(function() {
+	// 	$(this).removeClass('unactive');
+	// 	$(".container").not(this).addClass('active');
+	// });
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 	    var target = this.hash;
@@ -13,5 +12,4 @@ $(document).ready(function(){
 	        'scrollTop': $target.offset().top
 	    }, 800, 'swing');
 	});
-
 });
