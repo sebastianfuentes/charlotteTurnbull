@@ -133,14 +133,27 @@ a{
     display: block;
     width: 100%;
     border: none;
-    margin: 1em 0 0;
+    margin: .5em 0 0;
     font-size: 1em;
     font-family: "Raleway" !important;
     font-weight: 400;
     border-radius: 0;
+    outline: none;
+}
+.main .intro input[type="text"]:focus,textarea:focus{
+    background: #eee;
+    outline: none;
+}
+.main .intro input[type="text"]:hover,textarea:hover{
+    background: #eee;
+    -webkit-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s;
+    outline: none;
 }
 .main .intro input[type="submit"]{
-    padding: .3em 1em;
+    outline: none;
+    padding: .4em 1.2em;
     resize:none;
     display: block;
     width: auto;
@@ -150,6 +163,15 @@ a{
     font-weight: 400;
     font-family: "Raleway" !important;
     border-radius: 0;
+    background: #777;
+    color: #f0f0f0;
+}
+.main .intro input[type="submit"]:hover{
+    background: #666;
+    color: #fff;
+    -webkit-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
 }
 .main .about{
     display: block;
@@ -161,7 +183,7 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 5em 0 0;;
+    padding: 5em 0 0;
 }
 .main .about::before {
     content: '';
