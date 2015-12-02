@@ -392,13 +392,14 @@ a{
 }
 
 .container .more-info{
+    background: rgba(0,0,0,0.1);
     color: #fff;
     height: 100%;
     width: 100%;
     vertical-align: middle;
 }
 .container .more-info .appearable{
-    display: none;
+    display: inline-block;
     vertical-align: middle;
     margin: auto auto;
     position: absolute;
