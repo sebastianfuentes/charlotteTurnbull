@@ -13,7 +13,7 @@ $(document).ready(function(){
 	    }, 800, 'swing');
 	});
 	$("#services").hover(function(){
-		console.log('test');
+		$("")
 	});
 	// $(".intro").appear();
 	// $('.intro').on('disappear', function() {
