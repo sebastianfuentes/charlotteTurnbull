@@ -19,7 +19,7 @@ a{
     display: block;
     margin-top: 0;
 }
-.header ul{
+.header .menu{
     list-style-type: none;
     list-style: none;
     display: inline-block;
@@ -36,7 +36,7 @@ a{
     top: 0;
     box-shadow: 1px 1px 20px rgba(0,0,0,0.23);
 }
-.header ul .option{
+.header .menu .option{
     display: inline-block;
     font-family: "Oswald";
     display: inline-block;
@@ -44,17 +44,20 @@ a{
     background-color: #fff;
     margin: 0;
 }
-.header ul .option:hover{
+.header .menu .option:hover{
     color: #111;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
 }
-.header ul a{
+.header .menu a{
     border-right: 1px solid #999;
 }
-.header ul a.last{
+.header .menu a.last{
     border-right:none;
+}
+.header .submenu{
+    display: none;
 }
 .goto-next {
     border: 0;
@@ -537,7 +540,7 @@ a{
   }
 }
 @media (max-width: 1300px){
-    .header ul{
+    .header .menu{
         width: 100%;
         left: 0;
     }
