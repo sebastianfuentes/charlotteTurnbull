@@ -22,19 +22,19 @@ a{
 .header ul{
     list-style-type: none;
     list-style: none;
-    margin: 0;
     display: inline-block;
     padding: 0;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    width: auto;
+    left: 2em;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #fff;
     margin: 0;
     z-index: 9;
     position: fixed;
     height: 2em;
+    width: 25%;
+    min-width: 17em;
+    top: 0;
+    box-shadow: 1px 1px 20px rgba(0,0,0,0.23);
 }
 .header ul .option{
     display: inline-block;
@@ -42,19 +42,20 @@ a{
     font-family: "Oswald";
     display: inline-block;
     padding: .2em 1em;
-    background-color: #f0f0f0;
+    background-color: #fff;
     margin: 0;
 }
 .header ul .option:hover{
-    background: silver!important;
-    color: #f7f7f7;
+    color: #111;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
 }
-.header ul a.middle{
+.header ul a{
     border-right: 1px solid #999;
-    border-left: 1px solid #999;
+}
+.header ul a.last{
+    border-right:none;
 }
 .goto-next {
     border: 0;
@@ -124,6 +125,7 @@ a{
     text-align: left;
     font-family: "Raleway", serif;
     font-weight: 300;
+    box-shadow: 1px 1px 30px rgba(0,0,0,0.4);
 }
 .main .intro #name{
     margin-top: 3em;
@@ -433,7 +435,7 @@ a{
 }
 .section .thumb{
     display: block;
-    padding: 1em 3em 1.7em;
+    padding: 1em 10% 1.7em;
     background: rgba(253,253,253,0.34);
     position: absolute !important;
     height: auto;
@@ -535,7 +537,13 @@ a{
     transform: translateY(-15px);
   }
 }
-@media only screen and (max-width: 1024px) {
+@media (max-width: 1401px){
+    .header ul{
+        width: 100%;
+        left: 0;
+    }
+}
+@media (max-width: 1204px) {
     .container{
         min-height: 33%;
         background-repeat: no-repeat;

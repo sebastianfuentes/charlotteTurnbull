@@ -12,4 +12,13 @@ $(document).ready(function(){
 	        'scrollTop': $target.offset().top
 	    }, 800, 'swing');
 	});
+	// $(".intro").appear();
+	// $('.intro').on('disappear', function() {
+	// 	$(".header ul").addClass("sectionated")
+	// 	console.log("sectionated");
+	// });
+	// $('.intro').on('appear', function() {
+	// 	$(".header ul").removeClass("sectionated")
+	// 	console.log("desectionated");
+	// });
 });
