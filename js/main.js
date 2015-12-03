@@ -96,16 +96,14 @@ $(document).ready(function(){
 	        'scrollTop': $target.offset().top
 	    }, 800, 'swing');
 	});
-<<<<<<< HEAD
-	$("#services").hover(function(){
-		console.log('test');
-=======
-	$("section").mouseenter(function(){
+	$("#fullpage").mouseover(function(){
+		$(".submenu").slideUp(300, function(){$(this).toggleClass("active")});
+	});
+	$("section").mouseover(function(){
 		$(".submenu").slideUp(300, function(){$(this).toggleClass("active")});
 	});
 	$("#services").mouseenter(function(){
 		$(".submenu").slideDown(300, function(){$(this).toggleClass("active")});
->>>>>>> master
 	});
 	// $("#navButton").on("click", function(event) {
 	// 	$("#page-wrapper").css("display","block")
