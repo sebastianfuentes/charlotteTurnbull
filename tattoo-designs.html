@@ -111,27 +111,4 @@
 	<script src="js/util.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/fullPage.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				  scrollingSpeed: 1000,
-        		  autoScrolling: true,
-        		  sectionsColor : ['#000'],
-        		  paddingTop: '0',
-        		  keyboardScrolling: true,
-			      anchors:['scketch']
-			});
-			var activityTimeout = setTimeout(inActive, 3000);
-			function resetActive(){
-			    clearTimeout(activityTimeout);
-			}
-			function inActive(){
-				setInterval(advance, 4200);
-			}
-			$(document).bind('mousemove', function(){resetActive()});
-			function advance(){
-			   $(".fp-next").click();
-			}
-		});
-	</script>
 </html>
