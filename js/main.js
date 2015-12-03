@@ -134,3 +134,13 @@ $(document).ready(function(){
 	// 	console.log("desectionated");
 	// });
 });
+$(document).ready(function(){
+	$('#fullpage').fullpage({
+		  scrollingSpeed: 1000,
+		  autoScrolling: true,
+		  sectionsColor : ['#000'],
+		  paddingTop: '0',
+		  keyboardScrolling: true,
+	      anchors:['scketch']
+	});
+});
