@@ -96,7 +96,10 @@ $(document).ready(function(){
 	        'scrollTop': $target.offset().top
 	    }, 800, 'swing');
 	});
-	$("section").mouseenter(function(){
+	$("#fullpage").mouseover(function(){
+		$(".submenu").slideUp(300, function(){$(this).toggleClass("active")});
+	});
+	$("section").mouseover(function(){
 		$(".submenu").slideUp(300, function(){$(this).toggleClass("active")});
 	});
 	$("#services").mouseenter(function(){
