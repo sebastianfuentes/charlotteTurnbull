@@ -3731,9 +3731,9 @@ body {
                         content: '\f0c9';
                         display: block;
                         font-size: 16px;
-                        height: 3em;
+                        height: 2.5em;
                         left: 0;
-                        line-height: 3em;
+                        line-height: 2.5em;
                         position: absolute;
                         text-align: center;
                         top: 0;
@@ -3747,9 +3747,9 @@ body {
                         content: 'Menu';
                         display: block;
                         font-size: 16px;
-                        height: 3em;
+                        height: 2.5em;
                         left: 0;
-                        line-height: 3em;
+                        line-height: 2.5em;
                         position: absolute;
                         text-align: center;
                         top: 0;
