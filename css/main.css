@@ -3726,7 +3726,7 @@ body {
                     }
 
                     #navButton .toggle:before {
-                        background: rgba(0, 0, 0, 0.1);
+                        background: rgba(255,255,255,0.028);
                         color: #fff;
                         content: '\f0c9';
                         display: block;
@@ -3742,7 +3742,7 @@ body {
                     }
                     
                     #navButton .toggle:after {  
-                        background: rgba(0, 0, 0, 0.6);
+                        background: rgba(0, 0, 0, 0.9);
                         color: #fff;
                         content: 'Menu';
                         display: block;
