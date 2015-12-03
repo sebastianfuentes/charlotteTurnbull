@@ -11,11 +11,37 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
-	<body>
+	<body class="landing">
+		<div id="page-wrapper">
+		<header id="header" class="alt" style="display:none !important;">
+			<h1><a href="index.html">Charlotte Turnbull</h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li>
+						<a href="index.html#services" class="icon fa-angle-down">Services</a>
+						<ul>
+							<li>
+								<ul>
+									<li><a href="album-covers.html">Album Covers</a></li>
+									<li><a href="pet-portraits.html">Pet Portraits</a></li>
+									<li><a href="family-portraits.html">Family Portraits</a></li>
+									<li><a href="tattoo-designs.html">Tattoo Designs</a></li>
+									<li><a href="modern-portraits.html">Moden Portraits</a></li>
+									<li><a href="sketches.html">Sketches</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				<li class="option"><a href="about.html">About Me</a></li>
+				<li class="option last"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 		<nav class="header">
 			<ul class="menu">
-				<a href="/"><li class="option">Home</li></a>
-				<a href="/#services" >
+				<a href="index.html#main" class="self"><li class="option">Home</li></a>
+				<a id="service-link" href="index.html#services" class="self">
 					<li id="services" class="option">Services
 						<ul class="submenu">
 							<a href="album-covers.html"><li>Album Covers</li></a>
@@ -23,12 +49,12 @@
 							<a href="family-portraits.html"><li>Family Portraits</li></a>
 							<a href="tattoo-designs.html"><li>Tattoo Designs</li></a>
 							<a href="modern-portraits.html"><li>Moden Portraits</li></a>
-							<a href="sketches.html"><li>Sketches</li></a>
+							<a href="sketches.html"><li class="last">Sketches</li></a>
 						</ul>
 					</li>
 				</a>
 				<a href="about.html"><li class="option">About Me</li></a>
-				<a href="contact.html" class="last"><li class="option">Contact</li></a>
+				<a href="contact.html" class="last"><li class="option last">Contact</li></a>
 			</ul>
 		</nav>
 		<section class="main">
@@ -48,4 +74,8 @@
 		</section>
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/jquery.mobile.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/main.js"></script>
 </html>
