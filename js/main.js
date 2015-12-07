@@ -141,6 +141,6 @@ $(document).ready(function(){
 		  sectionsColor : ['#000'],
 		  paddingTop: '0',
 		  keyboardScrolling: true,
-	      anchors:['scketch']
+	      anchors:['gallery']
 	});
 });

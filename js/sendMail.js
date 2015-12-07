@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	if (Cookies.get('prismapubli') == "formm sent") {
-		console.log(Cookies.get('prismapubli'));
+	if (Cookies.get('charlotte') == "form sent") {
+		console.log(Cookies.get('charlotte'));
 		$("#send").click(function(e){
 			 e.preventDefault();
 		});
@@ -29,8 +29,9 @@ $(document).ready(function(){
 				          "from_name": name,
 				          "to": [
 				              {
-				                  "email": "annel@prismapubli.com",
-				                  "name": "Annel Mancilla",
+				                  // "email": "charlotteturnbull@gmail.com",
+				                  "email": "sebas6297@gmail.com",
+				                  "name": "Charlotte Turnbull",
 				                  "type": "to"
 				              }
 				          ],
@@ -46,9 +47,10 @@ $(document).ready(function(){
 			setTimeout(function(){
 				$(".loading").addClass("hidden");
 				$("#send").addClass("disabled");
-				$("#send").val("Listo")
+				$("#send").val("Ready")
 			}, 3000);
-			Cookies.set('prismapubli', "form sent", { expires: 1 });
+			Cookies.set('charlotte', "form sent", { expires: 1 });
+			location.reload();
 			}
 		});
 	}

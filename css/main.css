@@ -353,7 +353,7 @@ body {
     display: inline-block;
     padding: .2em .5em .2em;
     background-color: rgba(0,0,0,0);
-    margin: .5em 0 0;
+    margin: .3em 0 0;
 }
 .header .menu .option:hover{
     color: #fff;
@@ -3349,8 +3349,8 @@ body {
             top: 0;
             padding-top: 0;
         }
-        .main .we .intro{
-            top: 0;
+        .main .intro{
+            left: 0;
         }
         /* Off-Canvas Navigation */
 
