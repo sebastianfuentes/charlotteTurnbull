@@ -66,10 +66,11 @@
 							Contact Me.
 						</div>
 						If you are interested in my work please contact me.
+						<div id="missing" class="hidden">Please fill the missing fields</div>
 						<input type="text" id="name" name="name" value="" placeholder="Full Name">
 						<input type="text" id="number" name="number" value="" placeholder="Phone Number">
 						<input type="text" id="mail" name="mail" value="" placeholder="Email">
-						<textarea id="comments" name="comments" placeholder="Say hi or ask me a question" rows="3"></textarea>
+						<textarea id="text" name="comments" placeholder="Say hi or ask me a question" rows="3"></textarea>
 						<input type="submit" name="submit" id="send" value="Send">
 					</div>		
 				</div>		
@@ -81,5 +82,7 @@
 	<script src="js/jquery.mobile.min.js"></script>
 	<script src="js/skel.min.js"></script>
 	<script src="js/util.js"></script>
+	<script src="js/jquery.cookie.min.js"></script>
+	<script src="js/sendMail.js"></script>
 	<script src="js/main.js"></script>
 </html>
